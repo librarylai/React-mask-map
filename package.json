@@ -2,6 +2,7 @@
   "name": "react-map-leaflet",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://librarylai.github.io/React-mask-map/",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -15,11 +16,20 @@
     "react-leaflet-markercluster": "2.0.0-rc3",
     "react-scripts": "3.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
 }
